@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TO-DO</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <main class="container">
+            <div class="add-bar">
+                <i class="fas fa-clipboard-list mg-10 fs-large"></i>
+                <input type="text" id="new-task" placeholder="Add items..." >
+                <ion-icon id="add-button" name="add-circle-outline" class="mg-10 fs-large"></ion-icon>
+            </div>
+            <div class="menu-bar">
+                <div id="check-all-button">
+                    <ion-icon name="checkmark-done-outline"></ion-icon>
+                    <p id = "completeAll" class="fs-med" >Complete All tasks</p>
+                </div>
+                <p id = "clearComplete" class="fs-med">Clear Completed</p>
+            </div>
+            <hr>
+            <div id = "show-all" class="tasks-container">
+            </div>
+            <hr>
+            <div class="footer">
+                <div class="task-count">
+                    <p id="task-left-count" class="fs-med bold">3 </p>&nbsp
+                    <p class="fs-med">tasks on List</p>
+                </div>
+                <div class="filter">
+                    <p id='showAll' class="filter-button enabled">All</p>
+                    <p id='showComplete' class="filter-button">Completed</p>
+                    <p id='showInprogress' class="filter-button">In-progress</p>
+                    <p id='showNotStarted' class="filter-button">Not-started</p>
+                </div>
+            </div>
+        </main>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
